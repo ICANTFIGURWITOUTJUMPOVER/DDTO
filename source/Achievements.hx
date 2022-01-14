@@ -103,7 +103,7 @@ class AttachedAchievement extends FlxSprite {
 
 	public function reloadAchievementImage() {
 		if(Achievements.isAchievementUnlocked(tag)) {
-			loadGraphic(Paths.image('achievementgrid'), true, 150, 150);
+			loadGraphic(Paths.image('trophies'), true, 449, 450);
 			animation.add('icon', [Achievements.getAchievementIndex(tag)], 0, false, false);
 			animation.play('icon');
 		} else {
@@ -133,11 +133,11 @@ class AchievementObject extends FlxSpriteGroup {
 		var achievementBG:FlxSprite = new FlxSprite(60, 50).makeGraphic(420, 120, FlxColor.BLACK);
 		achievementBG.scrollFactor.set();
 
-		var achievementIcon:FlxSprite = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('achievementgrid'), true, 150, 150);
+		var achievementIcon:FlxSprite = new FlxSprite(achievementBG.x + 10, achievementBG.y + 10).loadGraphic(Paths.image('trophies'), true, 449, 450);
 		achievementIcon.animation.add('icon', [id], 0, false, false);
 		achievementIcon.animation.play('icon');
 		achievementIcon.scrollFactor.set();
-		achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (2 / 3)));
+		achievementIcon.setGraphicSize(Std.int(achievementIcon.width * (1 / 1)));
 		achievementIcon.updateHitbox();
 		achievementIcon.antialiasing = ClientPrefs.globalAntialiasing;
 

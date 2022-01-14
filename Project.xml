@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-        <app title="Friday Night Funkin': Doki Doki Takeover!" file="DokiTakeover" packageName="com.sawsirox.psychengine" package="com.sawsirox.psychengine" main="Main" version="2.0.7" company="SawSirox" />
+        <app title="Friday Night Funkin': Doki Doki Takeover!" file="DokiTakeover" packageName="com.ddtoteam.dokitakeover" package="com.ddtoteam.dokitakeover" main="Main" version="2.0.7" company="DDTO Team" />
 	
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 

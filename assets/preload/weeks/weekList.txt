@@ -1,3 +1,4 @@
+week0
 tutorial
 week1
 week2
